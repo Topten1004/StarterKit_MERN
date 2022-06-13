@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif
+}
+
+body {
+  background-color: black;
+  padding: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.diary-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 650px;
+  min-height: 600px;
+  background: white;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  box-shadow: 0px 10px 15px 15px rgba(0,0,0,0.1);
+  overflow: scroll;
+}
+
+h1 {
+  margin: 32px;
+  font-size: 33px;
+}
+
+.complete {
+  text-decoration: line-through;
+}
+
+.diary-form {
+  margin-bottom: 32px;
+}
+
+.diary-input {
+  padding: 14px 32px 14px 16px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: none;
+  height: 50px;
+  outline: none;
+  width: 400px;
+  box-shadow: 0px 10px 15px 15px rgba(0,0,0,0.1);
+}
+
+.diary-date-input {
+  border-radius: 4px;
+  padding: 5px;
+  border: none;
+  height: 50px;
+  outline: none;
+  width: 160px;
+  box-shadow: 0px 10px 15px 15px rgba(0,0,0,0.1);
+}
+
+.diary-textarea {
+  padding: 14px 32px 14px 16px;
+  margin-top: -15px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  width: 90%;
+  box-shadow: 0px 10px 15px 15px rgba(0,0,0,0.1);
+}
+
+.diary-button {
+  box-shadow: 20px 20px 25px 25px rgba(0,0,0,0.1);
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  height: 45px;
+  width: 200px;
+  border-radius: 4px;
+  margin-top: 7px;
+  cursor: pointer;
+  outline: none;
+  background: black;
+  color: white;
+  text-transform: capitalize;
+  float: left;
+  margin-left: 30px;
+}
+
+.diary-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.diary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+  box-shadow: 0px 10px 15px 15px rgba(0,0,0,0.1);
+  background: black;
+  color: white
+}
+
+.delete {
+  font-size: 22px;
+}
+
+.date {
+  font-size: 15px;
+  margin-right: 5px;
+}
